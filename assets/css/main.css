@@ -45,6 +45,10 @@ blockquote, q {
 		content: '';
 		content: none;
 	}
+h3.names {
+	margin-bottom: 0;
+	text-align: center !important;
+}
 
 table {
 	border-collapse: collapse;
