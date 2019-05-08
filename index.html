@@ -65,6 +65,55 @@
 										<h2>Features</h2>
 										<p>Highlight interesting parts or features of your image, list all additional features and changes you have implemented on top of the code provided</p>
 									</header>
+									<div class="row">
+										<h3>Smooth Shading</h3>
+										<div class="col-3 col-12-xsmall">
+											<span class="image avatar"><img src="images/bunnyFlat.png" alt="Stanford bunny with flat shading" /></span>
+											<div style="padding-bottom:0px !important">
+												<header class="major"><p class="names">Flat Shading</p></header>
+											</div>
+										</div>
+										<div class="col-3 col-12-xsmall">
+											<span class="image avatar"><img src="images/bunnySmooth.png" alt="Stanford bunny with smooth shading" /></span>
+											<div style="padding-bottom:0px !important">
+												<header class="major"><p class="names">Smooth Shading</p></header>
+											</div>
+										</div>
+										<p>These two images compare the Stanford bunny triangle mesh with flat and smooth shading.
+											In flat shading, each triangle has a constant normal, causing each triangle to appear "flat".
+											In smooth shading, the normal of each triangle varies based on the normals of the adjacent triangles, creating a smoother appearance.
+											This allows us to better represent smooth surfaces (such as our chess pieces) as triangle meshes.  
+										</p>
+									</div>
+									<div class="row">
+										<h3>Anti-Aliasing</h3>
+										<div class="col-3 col-12-xsmall">
+											<span class="image avatar"><img src="images/antiAliasSimple.png" alt="Primitives with no anti-aliasing" /></span>
+											<div style="padding-bottom:0px !important">
+												<header class="major"><p class="names">No Anti-Aliasing</p></header>
+											</div>
+										</div>
+										<div class="col-3 col-12-xsmall">
+											<span class="image avatar"><img src="images/antiAliasRegularBox4.png" alt="Primitives with regular sampling and a box filter" /></span>
+											<div style="padding-bottom:0px !important">
+												<header class="major"><p class="names">Regular Sampling with a Box Filter</p></header>
+											</div>
+										</div>
+										<div class="col-3 col-12-xsmall">
+											<span class="image avatar"><img src="images/antiAliasJitterGaussian4.png" alt="Primitives with jitter sampling and a gaussian filter" /></span>
+											<div style="padding-bottom:0px !important">
+												<header class="major"><p class="names">Jitter Sampling with a Gaussian Filter</p></header>
+											</div>
+										</div>
+										<p>These three images demonstrate the two types of anti-aliasing we implemented.  
+											The first image contains a scene with three primitives with no anti-aliasing.
+											Notice the unpleasant "jaggies" that appear along the edges of the triangle.
+											The second image uses regular sampling of degree 4 with a box filter, meaning that we cast 16 rays at regular intervals per pixel of equal weight.
+											The third image uses jitter sampling of degree 4 with a gaussian filter.
+											This means that each ray is cast at a random point through its region of the pixel and given more weight if it is closer to the center of the pixel. 
+											This approach produces more natural looking images but is more computationally expensive.
+										</p>
+									</div>
 									<p>Additional images may be included</p>
 								</div>
 							</section>
@@ -76,7 +125,15 @@
 										<h2>Rendering Times</h2>
 										<p>Table comparing rendering times with and without acceleration structures</p>
 									</header>
-									<p>Supporting renderings must be included</p>
+									<div class="row">
+										<h3>Multithreading</h3>
+										<img src="images/multithreadSpeedup.png" alt="Graph showing runtime on different numbers of cores" />
+										<p>Because ray tracing is a highly parallelizable task, we implemented multithreading using Open MP.  
+											We rendered a test scene with XXX polygons and 800x800 resolution with different numbers of cores ranging from 1 to 64.  
+											The graph above demonstrates a a significant speedup with increasing cores, with the program executing 32 times faster on 64 cores compared to 1 core. 
+										</p>
+									</div>
+									<p>We will need another one for KD trees</p>
 								</div>
 							</section>
 
@@ -129,7 +186,7 @@
 									</div>
 									<br>
 									<p style="font-size:1.4em">We are Computer Science majors at Harvey Mudd College,
-										 class of 2020, taking Computer Graphics at Pitzer College with Professor Waqar
+										 class of 2020, taking Computer Graphics (CS155) at Pitzer College with Professor Waqar
 										 Saleem. Thanks for checking out our raytracing project!</p>
 								</div>
 							</section>
