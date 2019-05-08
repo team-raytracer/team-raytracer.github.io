@@ -11,7 +11,7 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/colorful.png" alt="" /></span>
+					<span class="image avatar"><img src="images/bun.png" alt="" /></span>
 					<h1 id="logo"><a href="#">Team Raytracer</a></h1>
 				</header>
 				<nav id="nav">
@@ -64,58 +64,59 @@
 								<div class="container">
 									<header class="major">
 										<h2>Features</h2>
-										<p>Highlight interesting parts or features of your image, list all additional features and changes you have implemented on top of the code provided</p>
+										<p>Here are some of the interesting features we implemented on top of the code provided:</p>
 									</header>
+									<h3>Smooth Shading</h3>
 									<div class="row">
-										<h3>Smooth Shading</h3>
-										<div class="col-3 col-12-xsmall">
-											<span class="image avatar"><img src="images/bunnyFlat.png" alt="Stanford bunny with flat shading" /></span>
+										<div class="col-6 col-12-xsmall">
+											<img width="100%" src="images/bunnyFlat.png" alt="Stanford bunny with flat shading" />
 											<div style="padding-bottom:0px !important">
-												<header class="major"><p class="names">Flat Shading</p></header>
+												<header class="major" style="font-size:1.4em"><p class="names">Flat Shading</p></header>
 											</div>
 										</div>
-										<div class="col-3 col-12-xsmall">
-											<span class="image avatar"><img src="images/bunnySmooth.png" alt="Stanford bunny with smooth shading" /></span>
+										<div class="col-6 col-12-xsmall">
+											<img width="100%" src="images/bunnySmooth.png" alt="Stanford bunny with smooth shading" />
 											<div style="padding-bottom:0px !important">
-												<header class="major"><p class="names">Smooth Shading</p></header>
+												<header class="major" style="font-size:1.4em"><p class="names">Smooth Shading</p></header>
 											</div>
 										</div>
-										<p>These two images compare the Stanford bunny triangle mesh with flat and smooth shading.
-											In flat shading, each triangle has a constant normal, causing each triangle to appear "flat".
-											In smooth shading, the normal of each triangle varies based on the normals of the adjacent triangles, creating a smoother appearance.
-											This allows us to better represent smooth surfaces (such as our chess pieces) as triangle meshes.  
-										</p>
 									</div>
+									<br>
+									<p style="font-size:1.4em">These two images compare the Stanford bunny triangle mesh with flat and smooth shading.
+										In flat shading, each triangle has a constant normal, causing each triangle to appear "flat".
+										In smooth shading, the normal of each triangle varies based on the normals of the adjacent triangles, creating a smoother appearance.
+										This allows us to better represent smooth surfaces (such as our chess pieces) as triangle meshes.
+									</p>
+									<h3>Anti-Aliasing</h3>
 									<div class="row">
-										<h3>Anti-Aliasing</h3>
-										<div class="col-3 col-12-xsmall">
-											<span class="image avatar"><img src="images/antiAliasSimple.png" alt="Primitives with no anti-aliasing" /></span>
+										<div class="col-4 col-12-xsmall">
+											<img width="100%" src="images/antiAliasSimple.png" alt="Primitives with no anti-aliasing" />
 											<div style="padding-bottom:0px !important">
-												<header class="major"><p class="names">No Anti-Aliasing</p></header>
+												<header class="major"><p style="font-size:1.4em" class="names">No Anti-Aliasing</p></header>
 											</div>
 										</div>
-										<div class="col-3 col-12-xsmall">
-											<span class="image avatar"><img src="images/antiAliasRegularBox4.png" alt="Primitives with regular sampling and a box filter" /></span>
+										<div class="col-4 col-12-xsmall">
+											<img width="100%" src="images/antiAliasRegularBox4.png" alt="Primitives with regular sampling and a box filter" />
 											<div style="padding-bottom:0px !important">
-												<header class="major"><p class="names">Regular Sampling with a Box Filter</p></header>
+												<header class="major"><p style="font-size:1.4em" class="names">Regular Sampling with a Box Filter</p></header>
 											</div>
 										</div>
-										<div class="col-3 col-12-xsmall">
-											<span class="image avatar"><img src="images/antiAliasJitterGaussian4.png" alt="Primitives with jitter sampling and a gaussian filter" /></span>
+										<div class="col-4 col-12-xsmall">
+											<img width="100%" src="images/antiAliasJitterGaussian4.png" alt="Primitives with jitter sampling and a gaussian filter" />
 											<div style="padding-bottom:0px !important">
-												<header class="major"><p class="names">Jitter Sampling with a Gaussian Filter</p></header>
+												<header class="major"><p style="font-size:1.4em" class="names">Jitter Sampling with a Gaussian Filter</p></header>
 											</div>
 										</div>
-										<p>These three images demonstrate the two types of anti-aliasing we implemented.  
-											The first image contains a scene with three primitives with no anti-aliasing.
-											Notice the unpleasant "jaggies" that appear along the edges of the triangle.
-											The second image uses regular sampling of degree 4 with a box filter, meaning that we cast 16 rays at regular intervals per pixel with equal weight.
-											The third image uses jitter sampling of degree 4 with a gaussian filter.
-											This means that each ray is cast at a random point through its region of the pixel and given more weight if it is closer to the center of the pixel. 
-											This approach produces more natural looking images but is more computationally expensive.
-										</p>
 									</div>
-									<p>Additional images may be included</p>
+									<br>
+									<p style="font-size:1.4em">These three images demonstrate the two types of anti-aliasing we implemented.
+										The first image contains a scene with three primitives with no anti-aliasing.
+										Notice the unpleasant "jaggies" that appear along the edges of the triangle.
+										The second image uses regular sampling of degree 4 with a box filter, meaning that we cast 16 rays at regular intervals per pixel with equal weight.
+										The third image uses jitter sampling of degree 4 with a gaussian filter.
+										This means that each ray is cast at a random point through its region of the pixel and given more weight if it is closer to the center of the pixel.
+										This approach produces more natural looking images but is more computationally expensive.
+									</p>
 								</div>
 							</section>
 
@@ -124,17 +125,19 @@
 								<div class="container">
 									<header class="major">
 										<h2>Rendering Times</h2>
-										<p>Table comparing rendering times with and without acceleration structures</p>
 									</header>
-									<div class="row">
-										<h3>Multithreading</h3>
-										<img src="images/multithreadSpeedup.png" alt="Graph showing runtime on different numbers of cores" />
-										<p>Because ray tracing is a highly parallelizable task, we implemented multithreading using Open MP.  
-											We rendered a test scene with 16,302 polygons and 800x800 resolution with different numbers of cores ranging from 1 to 64.  
-											The graph above demonstrates a a significant speedup with increasing cores, with the program executing 32 times faster on 64 cores compared to 1 core. 
-										</p>
-									</div>
-									<p>We will need another one for KD trees</p>
+									<h3>KD-Tree</h3>
+									<p style="font-size:1.4em">
+										Woo
+									</p>
+									<h3>Multithreading</h3>
+									<img width="100%" src="images/multithreadSpeedup.png" alt="Graph showing runtime on different numbers of cores" />
+									<br><br>
+									<p style="font-size:1.4em">
+										Because ray tracing is a highly parallelizable task, we implemented multithreading using Open MP.
+										We rendered a test scene with 16,302 polygons and 800x800 resolution with different numbers of cores ranging from 1 to 64.
+										The graph above demonstrates a a significant speedup with increasing cores, with the program executing 32 times faster on 64 cores compared to 1 core.
+									</p>
 								</div>
 							</section>
 
@@ -153,16 +156,16 @@
 						<section id="extra-credit">
 								<div class="container">
 									<header class="major">
-										<h2>Extra-Credit Features</h2>
-										<p>The following features go beyond the basic requirements for this project</p>
+										<h2>Extra Credit Features</h2>
+										<p>The following features we implemented go beyond the basic requirements for this project.</p>
 									</header>
 									<ol>
-										<li>Multithreading: We implemented multithreading with OpenMp, which increased our execution speed by over 32 times.</li>
-										<li>Loading PLYs: We can load any arbitrary triangle mesh ply file.</li>
-										<li>Smooth Shading: When loading a triangle mesh, we can choose between smooth or flat shading</li>
-										<li>Regular Sampling with Box Filter: For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
-										<li>Jitter Sampling with a Gaussian Filter: For advanced anti-aliasing, we implemented jitter sampling with a gaussian filter.  We can specify the degree and standard deviation as parameters of the sampler.</li>
-										<li>Program interface: The user can specify the output filename as a command line argument.  When running, the program prints relevant information such as the number of cores used and the number of polygons.</li>
+										<li style="font-size:1.4em"><b>Multithreading:</b> We implemented multithreading with OpenMp, which increased our execution speed by over 32 times.</li>
+										<br><li style="font-size:1.4em"><b>Loading PLYs:</b> We can load any arbitrary triangle mesh ply file.</li>
+										<br><li style="font-size:1.4em"><b>Smooth Shading:</b> When loading a triangle mesh, we can choose between smooth or flat shading.</li>
+										<br><li style="font-size:1.4em"><b>Regular Sampling with Box Filter:</b> For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
+										<br><li style="font-size:1.4em"><b>Jitter Sampling with a Gaussian Filter:</b> For advanced anti-aliasing, we implemented jitter sampling with a gaussian filter.  We can specify the degree and standard deviation as parameters of the sampler.</li>
+										<br><li style="font-size:1.4em"><b>Program Interface:</b> The user can specify the output filename as a command line argument.  When running, the program prints relevant information such as the number of cores used and the number of polygons.</li>
 									</ol>
 								</div>
 							</section>
