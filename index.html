@@ -21,6 +21,7 @@
 						<li><a href="#features">Features</a></li>
 						<li><a href="#times">Rendering Times</a></li>
 						<li><a href="#links">Image Links</a></li>
+						<li><a href="#extra-credit">Extra Credit</a></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="#sources">Sources</a></li>
 					</ul>
@@ -108,7 +109,7 @@
 										<p>These three images demonstrate the two types of anti-aliasing we implemented.  
 											The first image contains a scene with three primitives with no anti-aliasing.
 											Notice the unpleasant "jaggies" that appear along the edges of the triangle.
-											The second image uses regular sampling of degree 4 with a box filter, meaning that we cast 16 rays at regular intervals per pixel of equal weight.
+											The second image uses regular sampling of degree 4 with a box filter, meaning that we cast 16 rays at regular intervals per pixel with equal weight.
 											The third image uses jitter sampling of degree 4 with a gaussian filter.
 											This means that each ray is cast at a random point through its region of the pixel and given more weight if it is closer to the center of the pixel. 
 											This approach produces more natural looking images but is more computationally expensive.
@@ -142,9 +143,27 @@
 								<div class="container">
 									<header class="major">
 										<h2>Image Links</h2>
-										<p>link for every included image to the corresponding implementation of World::build</p>
+										<p>Link for every included image to the corresponding implementation of World::build</p>
 									</header>
 									<p>boop</p>
+								</div>
+							</section>
+
+						<!-- Five.Five -->
+						<section id="extra-credit">
+								<div class="container">
+									<header class="major">
+										<h2>Extra-Credit Features</h2>
+										<p>The following features go beyond the basic requirements for this project</p>
+									</header>
+									<ol>
+										<li>Multithreading: We implemented multithreading with OpenMp, which increased our execution speed by over 32 times.</li>
+										<li>Loading PLYs: We can load any arbitrary triangle mesh ply file.</li>
+										<li>Smooth Shading: When loading a triangle mesh, we can choose between smooth or flat shading</li>
+										<li>Regular Sampling with Box Filter: For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
+										<li>Jitter Sampling with a Gaussian Filter: For advanced anti-aliasing, we implemented jitter sampling with a gaussian filter.  We can specify the degree and standard deviation as parameters of the sampler.</li>
+										<li>Program interface: The user can specify the output filename as a command line argument.  When running, the program prints relevant information such as the number of cores used and the number of polygons.</li>
+									</ol>
 								</div>
 							</section>
 
