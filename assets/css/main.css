@@ -45,7 +45,7 @@ blockquote, q {
 		content: '';
 		content: none;
 	}
-h3.names {
+h3.names, p.names {
 	margin-bottom: 0;
 	text-align: center !important;
 }
