@@ -36,7 +36,7 @@
             <!-- One -->
               <section id="concept">
                 <div class="image main" data-position="center">
-                  <img src="images/highResScene.png" alt="" />
+                  <img src="images/chess_reflective.png" alt="" />
                 </div>
                 <div class="container">
                   <header class="major">
@@ -82,6 +82,7 @@
 										<img width="100%" height="100%" src="images/chess_reflective.png"/>
 									</div>
 									<br>
+<<<<<<< HEAD
 									<a download="chess_reflective.png" href="images/chess_reflective.png" title="Reflective Scene">
 										High Resolution Image (1920x1920)
 									</a>
@@ -94,6 +95,10 @@
 										In this scene we demonstrate our reflective material by replacing the matte material on the
 										chessboard triangles with a reflective material. This uses secondary rays to calculate the
 										colors that result from bouncing off the polygons. 
+=======
+									<p style="font-size:1.4em">
+
+>>>>>>> 6d807e1a7bfc189a557f61325ba78b387ce13879
 									</p>
 								</div>
 							</section>
@@ -238,10 +243,10 @@
                     <li style="font-size:1.4em"><b>Multithreading:</b> We implemented multithreading with OpenMp, which increased our execution speed by over 32 times.</li>
                     <br><li style="font-size:1.4em"><b>Loading PLYs:</b> We can load any arbitrary triangle mesh ply file.</li>
                     <br><li style="font-size:1.4em"><b>Smooth Shading:</b> When loading a triangle mesh, we can choose between smooth or flat shading.</li>
-                    <br><li style="font-size:1.4em"><b>Regular Sampling with Box Filter:</b> For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
+                    <br><li style="font-size:1.4em"><b>Regular Sampling with a Box Filter:</b> For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
                     <br><li style="font-size:1.4em"><b>Jitter Sampling with a Gaussian Filter:</b> For advanced anti-aliasing, we implemented jitter sampling with a gaussian filter.  We can specify the degree and standard deviation as parameters of the sampler.</li>
                     <br><li style="font-size:1.4em"><b>Command-line Interface:</b> The user can customize many aspects of the program by passing command line flags.  For example, they can specify the output file name or enter "verbose" which prints render information.</li>
-                    <br><li style="font-size:1.4em"><b>Generalized camera viewing</b> While the default infrastructure requires that the viewing plane have a constant z, we generalized the viewing plane to support non constant z.  We can support specifying the camera and viewing plane in terms of a camera position, camera angle, and field of view.</li>
+                    <br><li style="font-size:1.4em"><b>Generalized Camera Viewing</b> While the default infrastructure requires that the viewing plane have a constant z, we generalized the viewing plane to support non constant z.  We can support specifying the camera and viewing plane in terms of a camera position, camera angle, and field of view.</li>
                     <br><li style="font-size:1.4em"><b>Command-line Interface:</b> The user can customize many aspects of the program by passing command line flags.  For example, they can specify the output file name or enter "verbose" which prints render information.</li>
                     <br><li style="font-size:1.4em"><b>Configurable Chess Layout:</b> The layout of the pieces on the chess board is read at runtime from the file "chessLayout.txt".  This way, the we can change the layout simply by changing the layout file without having to recompile the raytracer. </li>
 
@@ -327,7 +332,7 @@
                       </li>
                       <li>
                         <p style="font-size:1.4em">
-                          Professor Waqar Saleem, for his lectures and guidance
+                          Professor <a href="https://habib.edu.pk/SSE/dr-waqar-saleem/" target="_blank">Waqar Saleem</a>, for his lectures and guidance
                         </p>
                       </li>
                     </ul>
