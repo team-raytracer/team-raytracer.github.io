@@ -199,7 +199,11 @@
                     <br><li style="font-size:1.4em"><b>Smooth Shading:</b> When loading a triangle mesh, we can choose between smooth or flat shading.</li>
                     <br><li style="font-size:1.4em"><b>Regular Sampling with Box Filter:</b> For simple anti-aliasing, we implemented regular sampling with a box filter.  We can specify the degree (number of rays) as a parameter of the sampler.</li>
                     <br><li style="font-size:1.4em"><b>Jitter Sampling with a Gaussian Filter:</b> For advanced anti-aliasing, we implemented jitter sampling with a gaussian filter.  We can specify the degree and standard deviation as parameters of the sampler.</li>
-                    <br><li style="font-size:1.4em"><b>Program Interface:</b> The user can specify the output filename as a command line argument.  When running, the program prints relevant information such as the number of cores used and the number of polygons.</li>
+                    <br><li style="font-size:1.4em"><b>Command-line Interface:</b> The user can customize many aspects of the program by passing command line flags.  For example, they can specify the output file name or enter "verbose" which prints render information.</li>
+                    <br><li style="font-size:1.4em"><b>Generalized camera viewing</b> While the default infrastructure requires that the viewing plane have a constant z, we generalized the viewing plane to support non constant z.  We can support specifying the camera and viewing plane in terms of a camera position, camera angle, and field of view.</li>
+                    <br><li style="font-size:1.4em"><b>Command-line Interface:</b> The user can customize many aspects of the program by passing command line flags.  For example, they can specify the output file name or enter "verbose" which prints render information.</li>
+                    <br><li style="font-size:1.4em"><b>Configurable Chess Layout:</b> The layout of the pieces on the chess board is read at runtime from the file "chessLayout.txt".  This way, the we can change the layout simply by changing the layout file without having to recompile the raytracer. </li>
+                    
                   </ol>
                 </div>
               </section>
