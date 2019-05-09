@@ -171,12 +171,13 @@
                   </header>
                   <h3>K-D Tree</h3>
                   <img width="100%" src="images/k-dTreeSpeedup.png" alt="Graph showing runtime as function of number of vertices for kD and regular" />
-                  <img width="100%" src="images/k-dtable.png" alt="Graph showing runtime as function of number of vertices for kD and regular" />
+                  <img width="100%" src="images/k-dtable.png" alt="Table showing runtime as function of number of vertices for kD and regular" />
                   <p style="font-size:1.4em">
                     We implemented K-D trees as our acceleration structure, and got drastic speedup results after a lot of debugging. It took a lot of effort but it was more than worth it in the end because it allowed us to render complex 1920x1080 scenes in very short amounts of time, giving us the freedom to use higher-resolution models than we anticipated and more complex materials (e.g. reflective). As you can see, the returns are less apparent for small numbers of polygons, but once the number of them gets high enough it's a night-and-day difference.
                   </p>
                   <h3>Multithreading</h3>
                   <img width="100%" src="images/multithreadSpeedup.png" alt="Graph showing runtime on different numbers of cores" />
+                  <img width="100%" src="images/multithreadTable.png" alt="Table showing runtime on different numbers of cores" />
                   <br><br>
                   <p style="font-size:1.4em">
                     Because ray tracing is a highly parallelizable task, we implemented multithreading using Open MP.
