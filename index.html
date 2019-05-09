@@ -49,16 +49,56 @@
                 </div>
               </section>
 
-            <!-- Two -->
-              <section id="scene">
-                <div class="container">
-                  <header class="major">
-                    <h2>Scene</h2>
-                    <p>Describe how you built your scene</p>
-                  </header>
-                  <p>We build</p>
-                </div>
-              </section>
+						<!-- Two -->
+							<section id="scene">
+								<div class="container">
+									<header class="major">
+										<h2>Scene</h2>
+										<p>Describe how you built your scene</p>
+									</header>
+									<h3>Original Scene</h3>
+									<div class="row">
+										<img width="100%" height="100%" src="images/chess_matte.png"/>
+									</div>
+									<br>
+									<p style="font-size:1.4em">
+										We built this scene using triangles and imported models as smooth triangles for the chess pieces.
+										In this scene we use perspecitve viewing and include several point light sources
+										with ambient lighting to render the scene. We also use Jitter-Gaussian anti-aliasing
+										to smooth out the jaggies with 9 rays per pixel. Overall, there are 650,000+
+										polygons captured in our scene which took around 20 seconds to render using
+										a KD tree and multithreading on 8 cores.
+									</p>
+
+									<h3>Adding Reflections</h3>
+									<div class="row">
+										<img width="100%" height="100%" src="images/chess_reflective.png"/>
+									</div>
+									<br>
+									<p style="font-size:1.4em">
+
+									</p>
+									<h3>Reflective</h3>
+									<div class="row">
+										<div class="col-6 col-12-xsmall">
+											<img width="100%" src="images/ambient_point_directional.png"/>
+											<div style="padding-bottom:0px !important">
+												<header class="major" style="font-size:1.4em"><p class="names">Matte Material</p></header>
+											</div>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<img width="100%" src="images/reflective.png"/>
+											<div style="padding-bottom:0px !important">
+												<header class="major" style="font-size:1.4em"><p class="names">Reflective Material</p></header>
+											</div>
+										</div>
+									</div>
+									<br>
+									<p style="font-size:1.4em">
+										These images show spheres of different materials that we implemented.
+									</p>
+								</div>
+							</section>
 
             <!-- Three -->
               <section id="features">
