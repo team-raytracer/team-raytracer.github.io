@@ -61,6 +61,13 @@
 									<div class="row">
 										<img width="100%" height="100%" src="images/chess_matte.png"/>
 									</div>
+									<a download="chess_matte.png" href="images/chess_matte.png" title="Orignal Scene">
+										High Resolution Image (1920x1920)
+									</a>
+									<br>
+									<a download="chess_matte_low.png" href="images/chess_matte_low.png" title="Original Scene Low Res">
+										Low Resolution Image (480x480)
+									</a>
 									<br>
 									<p style="font-size:1.4em">
 										We built this scene using triangles and imported models as smooth triangles for the chess pieces.
@@ -76,28 +83,72 @@
 										<img width="100%" height="100%" src="images/chess_reflective.png"/>
 									</div>
 									<br>
-									<p style="font-size:1.4em">
-
-									</p>
-									<h3>Reflective</h3>
-									<div class="row">
-										<div class="col-6 col-12-xsmall">
-											<img width="100%" src="images/ambient_point_directional.png"/>
-											<div style="padding-bottom:0px !important">
-												<header class="major" style="font-size:1.4em"><p class="names">Matte Material</p></header>
-											</div>
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<img width="100%" src="images/reflective.png"/>
-											<div style="padding-bottom:0px !important">
-												<header class="major" style="font-size:1.4em"><p class="names">Reflective Material</p></header>
-											</div>
-										</div>
-									</div>
+									<a download="chess_reflective.png" href="images/chess_reflective.png" title="Reflective Scene">
+										High Resolution Image (1920x1920)
+									</a>
+									<br>
+									<a download="chess_reflective_low.png" href="images/chess_reflective_low.png" title="Reflective Scene Low Res">
+										Low Resolution Image (480x480)
+									</a>
 									<br>
 									<p style="font-size:1.4em">
-										These images show spheres of different materials that we implemented.
+										In this scene we demonstrate our reflective material by replacing the matte material on the
+										chessboard triangles with a reflective material. This uses secondary rays to calculate the
+										colors that result from bouncing off the polygons.
 									</p>
+
+									<h3>Other Variations</h3>
+                  <div class="row">
+                    <div class="col-6 col-12-xsmall">
+											<a download="chess_reflective_colors.png" href="images/chess_reflective_colors.png" title="Reflective Colors">
+												<img width="100%" height="auto" src="images/chess_reflective_colors.png"/>
+											</a>
+                      <div style="padding-bottom:0px !important">
+                        <header class="major"><p style="font-size:1.4em" class="names">Colored Reflections</p></header>
+                      </div>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+											<a download="chess_reflective_sphere.png" href="images/chess_reflective_sphere.png" title="Reflective Sphere">
+												<img width="100%" height="auto" src="images/chess_reflective_sphere.png"/>
+											</a>
+                      <div style="padding-bottom:0px !important">
+                        <header class="major"><p style="font-size:1.4em" class="names">Reflective Sphere</p></header>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <p style="font-size:1.4em">
+                    We also played around with a couple other things in our scene. Our reflective material also had the
+										ability to filter the colors in the reflected image so we tested this out on the chessboard. We also
+										played around with adding other reflecive objects like this sphere above the board.
+                  </p>
+
+									<h3>Honorable Mentions</h3>
+                  <div class="row">
+                    <div class="col-6 col-12-xsmall">
+											<a download="chess_buggy_reflective_walls.png" href="images/chess_buggy_reflective_walls.png" title="Buggy Reflective Walls">
+												<img width="100%" height="auto" src="images/chess_buggy_reflective_walls.png"/>
+											</a>
+                      <div style="padding-bottom:0px !important">
+                        <header class="major"><p style="font-size:1.4em" class="names">Mirrors</p></header>
+                      </div>
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+											<a download="chess_red_reflective_walls.png" href="images/chess_red_reflective_walls.png" title="Red Reflective Walls">
+												<img width="100%" height="auto" src="images/chess_red_reflective_walls.png"/>
+											</a>
+                      <div style="padding-bottom:0px !important">
+                        <header class="major"><p style="font-size:1.4em" class="names">Colored Mirrors</p></header>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <p style="font-size:1.4em">
+                    We also experimented with adding mirrors to demonstrate how reflections can bounce off of mulitple
+										reflective surfaces in our scene, however we found that this generated out of gamut colors (which
+										were changed to black in the ppm to png conversion process). This is a feature, amoung others, that
+										we would like to fully implement with more time.
+                  </p>
 								</div>
 							</section>
 
